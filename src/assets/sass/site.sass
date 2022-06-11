@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap')
+
+@import 'button'
+@import 'github'
+
+$x-bg: #0c1016
+
+
+.x-a
+  display: inline-block
+  text-decoration: none
+  text-decoration-skip-ink: auto
+  color: inherit
+  position: relative
+
+html, body, #trx-app
+  font-family: 'Roboto', sans-serif
+  display: flex
+  height: 100%
+  width: 100%
+  justify-content: center
+  align-items: center
+  user-select: none
+  flex-direction: column
+
+  footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 10%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #4a4e63
+
+    a:hover
+      color: #5a6ab3
+
+  h1
+    font-size: 1.9rem
+    color: white
+    margin-bottom: 3.5rem
+
+    span
+      color: salmon
+
+@media(max-width: 512px)
+  html, body, #trx-app
+    font-size: 12px
+
+body
+  background-color: $x-bg
