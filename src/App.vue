@@ -6,6 +6,7 @@ import Footer from './components/Footer.vue';
 const buttonClicks = ref(localStorage.getItem('uselesswebsite.clicks') || 0);
 
 const increase = () => {
+  // @ts-ignore
   localStorage.setItem('uselesswebsite.clicks', (buttonClicks.value++) + 1);
 }
 </script>
